@@ -1,14 +1,13 @@
+require('dotenv').config();
 //Upload dos módulos
 const express = require('express')
 const {engine} = require("express-handlebars")
 const bodyParser = require('body-parser')
 const app = express()
 const path = require('path')
-
-
+const home = require("./controllers/home")
 
 //configurações dos módulos
-
 
 //middleware
 
@@ -29,14 +28,24 @@ app.set('view engine', 'handlebars');
 //public
 app.use(express.static(path.join(__dirname, "public")))
 
-//Rotas
-app.get('/', function(req, res){
-    res.render('pages/home')
-  })
 
+//Rotas
+app.get('/', (req, res)=>{
+    res.render('pages/home')
+})
+
+app.get('/sobre', (req, res)=>{
+    res.render('pages/sobre')
+})
+app.get('/contato', (req, res)=>{
+    res.render('pages/contato')
+})
+
+
+//Rota Externa
+app.use("/inicio", home)
 
 //Outras Config
-const PORT = 8081
-app.listen(PORT,() => {
+app.listen(process.env.PORT,() => {
     console.log('servidor rodando!')
 })

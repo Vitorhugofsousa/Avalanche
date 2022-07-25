@@ -1,0 +1,34 @@
+.main {
+    width: 100%;
+}
+#divselect{
+    display: flex;
+    flex-direction: row;
+}
+#img-cardhome{
+   
+    border-radius: 5px;
+
+    width: auto;
+    height: auto;
+    
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.carousel-item{
+    width: 100%;
+}
+.carousel-item img{
+    border: 0.1px solid rgb(194, 194, 194);
+    height: 350px;
+    width: 100px;
+    display: flex;
+} 
+
+#carouselExampleControls1,
+#carouselExampleControls2{
+    width: 100%;
+    height: auto;
+}

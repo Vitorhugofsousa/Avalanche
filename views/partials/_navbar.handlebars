@@ -1,35 +1,46 @@
-<nav class="navbar navbar-expand-lg " style="background-color: #012E40;">
+<nav class="navbar navbar-expand-lg ">
   <div class="container-fluid" >
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0"  style="gap: 5px;">
-        <li class="nav-item" style="background-color:white; border-radius: 15px; height: auto; padding: none;">
-          <a class="nav-link active" aria-current="page" href="#" style="color: #012E40;">Home</a>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="/inicio">
+            <box-icon name='home-alt-2' type='solid' color="#fff"></box-icon>
+          </a>
         </li>
-        <li class="nav-item" style="background-color:white; border-radius: 15px;">
-          <a class="nav-link" href="#" style="color: #012E40;">Sobre</a>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/sobre">
+            <box-icon type='solid' name='news' color="#fff"></box-icon>
+          </a>
         </li>
-        
-         
+
+        <li class="nav-item">
+          <a class="nav-link" href="/contato">
+            <box-icon name='telegram' type='logo' color="#fff"></box-icon>
+          </a>
         </li>
-        <li class="nav-item" style="background-color:white; border-radius: 15px;">
-          <a class="nav-link disabled" style="color: #012E40;">Contato</a>
-        </li>
+
       </ul>
       <div class="d-flex" style="gap: 3px;">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">
-            Perfil
+            Login
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:white;">
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Perfil</a></li>
             <li><a class="dropdown-item" href="#">Cadastrar-se</a></li>
-            <li><hr class="dropdown-divider">Entrar</li>
-            <li><a class="dropdown-item" href="#">Sair</a>    
+            <li><a class="dropdown-item">Entrar</a></li>
+            <li><a class="dropdown-item" href="#">Sair</a></li> 
+          </ul> 
       </div>
-      <a class="navbar-brand" href="#" style="color:white;">log perfil<img src="" alt=""></a>
+      <a class="navbar-brand redondo" href="#" style="color:white;">
+        <img src="https://w7.pngwing.com/pngs/528/425/png-transparent-smile-emoji-happy-happiness-happy-face-yellow-smiling-message-social-networks-whatsapp-thumbnail.png" alt="">
+      </a>
     </div>
   </div>
 </nav>
