@@ -1,4 +1,4 @@
-require('dotenv').config();
+//require('dotenv').config();
 //Upload dos módulos
 const express = require('express')
 const {engine} = require("express-handlebars")
@@ -46,6 +46,7 @@ app.get('/contato', (req, res)=>{
 app.use("/inicio", home)
 
 //Outras Config
-app.listen(process.env.PORT,() => {
+const PORT = 8081
+app.listen(PORT,() => {
     console.log('servidor rodando!')
 })

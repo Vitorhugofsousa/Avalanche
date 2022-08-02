@@ -6,15 +6,21 @@
     flex-direction: row;
 }
 #img-cardhome{
-   
-    border-radius: 5px;
-
-    width: auto;
-    height: auto;
     
+    border-radius: 5px;
+    
+    max-width: 100%;
+    height: 95%;
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+    
+
+}
+
+#carouselExampleControls1, #carouselExampleControls2{
+    width: 270px;
 }
 
 .carousel-item{
@@ -27,8 +33,4 @@
     display: flex;
 } 
 
-#carouselExampleControls1,
-#carouselExampleControls2{
-    width: 100%;
-    height: auto;
-}
+
