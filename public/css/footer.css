@@ -1,0 +1,23 @@
+#footer{
+    background-color: #012E40;
+
+}
+
+#bot-icon-st{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.btn-outline-dark{
+    border-color: black;
+}
+
+.btn-outline-dark:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: black;
+color: black;
+}

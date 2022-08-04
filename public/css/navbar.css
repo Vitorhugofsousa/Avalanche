@@ -4,20 +4,41 @@
     margin: 0;
 }
 
-.navbar {
-    background-color: #343a40;
+.extra{
+     background-color: #012E40;
+     position: sticky;
+     align-items: baseline;
+     width: 100%;
+      flex-direction: row;
+    justify-content:right;
+    height: auto;
+    padding: 30px 35px 40px 45px;
+
+}
+
+
+
+.profileitems{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+   
 }
 
 .nav-item a{
     margin: 0 10px;
     display: flex;
+    border: 0.3px  black;
     border-radius: 3px;
     transition: 0.2s ease-in;
 }
 .nav-item:hover a{
-    background-color: #012E40;
-    transform: translateY(25px) scale(1.1);
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: translateY(10px) scale(1.1);
 } 
+
 .redondo{
     margin-left: 10px;
     display: flex;
@@ -32,3 +53,12 @@
     height: auto;
     border-radius: 50%;
 }
+
+
+#nav-icon-st{
+    gap: 5px;
+    align-items: left;
+    justify-content: center;
+}
+
+

@@ -7,6 +7,8 @@ const app = express()
 const path = require('path')
 const home = require("./controllers/home")
 
+const forAll = require("./routes/forAll") 
+
 //configurações dos módulos
 
 //middleware
@@ -29,21 +31,10 @@ app.set('view engine', 'handlebars');
 app.use(express.static(path.join(__dirname, "public")))
 
 
-//Rotas
-app.get('/', (req, res)=>{
-    res.render('pages/home')
-})
-
-app.get('/sobre', (req, res)=>{
-    res.render('pages/sobre')
-})
-app.get('/contato', (req, res)=>{
-    res.render('pages/contato')
-})
-
-
-//Rota Externa
+////ROTAS
+//Rotas Externas
 app.use("/inicio", home)
+app.use("/", forAll)
 
 //Outras Config
 const PORT = 8081
