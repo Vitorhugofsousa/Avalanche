@@ -1,14 +1,8 @@
 {
   "name": "avalanche",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "repository": "https://github.com/Vitorhugofsousa/avalanche.git",
-  "author": "caduzz <67341983+caduzz@users.noreply.github.com>",
-  "license": "MIT",
-  "scripts": {
-    "dev": "nodemon app.js",
-    "start": "node app.js"
-  },
   "dependencies": {
     "body-parser": "^1.20.0",
     "connect-flash": "^0.1.1",
@@ -19,5 +13,12 @@
     "mysql2": "^2.3.3",
     "nodemon": "^2.0.19",
     "sequelize": "^6.21.3"
-  }
+  },
+  "scripts": {
+   "test": "echo\"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "MIT"
 }
