@@ -21,6 +21,7 @@
 
 #carouselExampleControls1, #carouselExampleControls2{
     width: 270px;
+
 }
 
 .carousel-item{
@@ -34,3 +35,17 @@
 } 
 
 
+.btn-outline-charcoal{
+    color: #012E40;
+    border: 1.3px solid  #012E40;
+}
+
+.btn-outline-charcoal:hover{
+    background-color: #012E40;
+    border-color: #012E40;
+color: white;
+}
+
+.uni-height{
+    height: 60px;
+}

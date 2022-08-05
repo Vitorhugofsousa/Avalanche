@@ -27,14 +27,23 @@
    
 }
 
-.nav-item a{
-    margin: 0 10px;
+#nav-icon-st{
+    gap: 5px;
+    align-items: left;
+    justify-content: center;
+}
+
+#hipo {
+    height: 40px;
+    width: 20px;
+    width: auto;
+    padding: 7px;
+    margin:  5px;
     display: flex;
-    border: 0.3px  black;
-    border-radius: 3px;
+    border-radius: 4px;
     transition: 0.2s ease-in;
 }
-.nav-item:hover a{
+#hipo:hover{
     background-color: rgba(0, 0, 0, 0.2);
     transform: translateY(10px) scale(1.1);
 } 
@@ -55,10 +64,5 @@
 }
 
 
-#nav-icon-st{
-    gap: 5px;
-    align-items: left;
-    justify-content: center;
-}
 
 

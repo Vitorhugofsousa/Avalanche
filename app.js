@@ -37,7 +37,7 @@ app.use("/inicio", home)
 app.use("/", forAll)
 
 //Outras Config
-const PORT = 8081
+const PORT = process.env.port || 8081
 app.listen(PORT,() => {
     console.log('servidor rodando!')
 })
